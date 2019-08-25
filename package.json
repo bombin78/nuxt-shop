@@ -4,6 +4,15 @@
   "description": "training project",
   "author": "Alexandr Bombin",
   "private": true,
+  "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bombin78/nuxt-shop.git"
+    },
+    "bugs": {
+        "url": "https://github.com/bombin78/nuxt-shop/issues"
+    },
+    "homepage": "https://github.com/bombin78/nuxt-shop#readme",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
