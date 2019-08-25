@@ -1,6 +1,6 @@
 # nuxt-shop
 
-> training project
+> My training project
 
 ## Build Setup
 
@@ -20,3 +20,5 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+=======
+# nuxt-shop
