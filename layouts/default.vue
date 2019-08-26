@@ -6,6 +6,7 @@
       </div>
       <div class="col-sm-3 offset-sm-6">
         Телефон
+        <cart />
       </div>
     </header>
     <nav>
@@ -36,6 +37,13 @@
     <nuxt />
   </div>
 </template>
+<script>
+import Cart from '../components/Cart';
+
+export default {
+    components: { Cart },
+};
+</script>
 <style>
 .nuxt-link-exact-active {
   color: #f00;

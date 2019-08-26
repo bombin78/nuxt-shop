@@ -13,7 +13,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    "quotes": ["error", "double",  { avoidEscape: true }],
+    "quotes": [0],
     "no-param-reassign": [2, { "props": false }],
     "import/no-extraneous-dependencies": [0],
   }
