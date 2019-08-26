@@ -6,7 +6,7 @@
       </div>
       <div class="col-sm-3 offset-sm-6">
         Телефон
-        <cart />
+        <cart-block />
       </div>
     </header>
     <nav>
@@ -38,10 +38,10 @@
   </div>
 </template>
 <script>
-import Cart from '../components/Cart';
+import CartBlock from '../components/CartBlock';
 
 export default {
-    components: { Cart },
+    components: { CartBlock },
 };
 </script>
 <style>

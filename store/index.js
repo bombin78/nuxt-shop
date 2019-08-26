@@ -13,7 +13,7 @@ export default function () {
         state.products = products;
       },
       ADD_TO_CART(state, product) {
-        const item = state.cart.find((p) => product.id === p.id);
+        const item = state.cart.find((i) => product.id === i.product.id);
         if (item) {
           item.quantity += 1;
         } else {
@@ -24,7 +24,7 @@ export default function () {
         }
       },
       REMOVE_FROM_CART(state, product) {
-        const index = state.cart.findIndex((p) => product.id === p.id);
+        const index = state.cart.findIndex((i) => product.id === i.product.id);
         if (index > -1) {
           state.products.splice(index, 1);
         }
@@ -51,6 +51,14 @@ export default function () {
       async LOAD_CART({ commit }) {
         const items = await Cart.getItems();
         commit('SET_CART', items);
+      },
+    },
+    getters: {
+      cartItemsCount(state) {
+        return state.cart.reduce((acc, item) => acc + item.quantity, 0);
+      },
+      cartTotalPrice(state) {
+        return state.cart.reduce((acc, item) => acc + item.quantity * item.product.price, 0);
       },
     },
   });

@@ -12,7 +12,7 @@ export default {
   },
   async saveItems(items) {
     if (storageIsEnabled()) {
-      localStorage.setItem('CART_ITEMS', items);
+      localStorage.setItem('CART_ITEMS', JSON.stringify(items));
     }
   },
 };
