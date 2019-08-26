@@ -1,6 +1,6 @@
-# nuxt-shop
+# nuxt-demo
 
-> My training project
+> My super-excellent Nuxt.js project
 
 ## Build Setup
 

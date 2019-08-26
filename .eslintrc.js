@@ -5,13 +5,16 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: `babel-eslint`
   },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+    "@nuxtjs",
+    "airbnb-base",
   ],
   // add your custom rules here
   rules: {
+    "quotes": ["error", "double",  { avoidEscape: true }],
+    "no-param-reassign": [2, { "props": false }],
+    "import/no-extraneous-dependencies": [0],
   }
-}
+};
